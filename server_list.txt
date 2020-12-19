@@ -5,5 +5,6 @@ ogura_ansible ansible_connection=local
 ogura_jenkins ansible_host=192.168.33.201
 
 
+
 [web]
 ogura_web ansible_host=192.168.33.210
