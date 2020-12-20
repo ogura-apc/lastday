@@ -1,0 +1,11 @@
+node{
+  stage('yum-update'){
+    build job: 'yum-update'
+  }
+  stage('インストールパッケージリスト'){
+    build job: 'check_installed_packages'
+  }
+  stage('サーバ毎に切り出し'){
+    build job: 'list_installed_shape'
+  }
+}
