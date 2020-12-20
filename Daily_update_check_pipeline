@@ -1,0 +1,8 @@
+node{
+  stage('check-update'){
+    build job: 'Daily_update_check_yum'
+  }
+  stage('text-shape'){
+    build job: 'Daily_update_check_shape'
+  }
+}
